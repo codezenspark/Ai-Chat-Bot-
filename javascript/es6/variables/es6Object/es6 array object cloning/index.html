@@ -9,21 +9,21 @@
     
     <h1>Array and object cloning</h1>
     <script>
-             let student1 = {
-            name: "Ali",
-            roll: "23A",
-            className:"science",
-            age:24
-        }
+        //      let student1 = {
+        //     name: "Ali",
+        //     roll: "23A",
+        //     className:"science",
+        //     age:24
+        // }
 
-        let studentCopy = student1;
+        // let studentCopy = student1;
 
-        console.log(studentCopy);
+        // console.log(studentCopy);
 
-        studentCopy["name"] = "daud";
-        student1["age"] = 21;
-        console.log(studentCopy);
-        console.log(student1);
+        // studentCopy["name"] = "daud";
+        // student1["age"] = 21;
+        // console.log(studentCopy);
+        // console.log(student1);
 
         // Primtive: number, string,boolean
         // non primitive: array , object
@@ -38,6 +38,12 @@
         
         // console.log(NumCopy);
         // console.log(Num);
+
+        let array = ['a', 'b', 'c', 'd', 'e', ];
+        let arrayCopy = {...array}
+        
+        console.log(arrayCopy);
+
 
     </script>
 </body>

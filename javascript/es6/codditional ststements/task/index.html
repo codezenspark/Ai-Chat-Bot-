@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="checkage(event)">
+        Enter your age: <input type="number" id="age"><br>
+        <button>Check</button>
+    </form>
+    <h2 id = "resultwindow"></h2>
+    <script>
+        function checkage(event){
+            event.preventDefault();
+            let Age = document.querySelector("#age").value;
+            console.log("Age")
+
+            massage = "";
+            if(Age > 0 && Age <= 10) {
+                massage = "chlid";
+            }
+            else if(Age > 10 && Age <= 30) {
+                massage = "Young";
+        } 
+        else{
+            massage = "old";
+        }
+        document.querySelector("#resultwindow").innerHTML=massage;}
+    </script>
+</body>
+</html>

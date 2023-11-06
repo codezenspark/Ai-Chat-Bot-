@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<form id="form">
+  <label for="marla">Enter marla:</label>
+  <input type="number" id="marla"><br><br>
+  <button type="button" onclick="convert()">Convert</button>
+</form>
+
+<p id="result"></p>
+
+<script>
+  // Conversion rate
+const marlaToSqft = 272;
+
+// Convert function  
+function convert() {
+
+  // Get marla input
+  let marla = document.getElementById("marla").value;
+  
+  // Calculate conversion
+  let sqft = marla * marlaToSqft;  
+
+  // Display output
+  document.getElementById("result").innerHTML = 
+    marla + " marla = " + sqft + " square feet";
+}
+</script>
+
+</body>
+</html>
